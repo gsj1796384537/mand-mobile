@@ -1,7 +1,7 @@
 <template>
   <div class="md-example-child md-example-child-captcha-1">
     <md-captcha
-      :maxlength="4"
+      :maxlength="6"
       :isView="true"
       brief="最新验证码依然有效，请勿重发"
     >
@@ -10,7 +10,8 @@
   </div>
 </template>
 
-<script>import {Captcha} from 'mand-mobile'
+<script>
+import {Captcha} from 'mand-mobile'
 
 export default {
   name: 'captcha-demo',
@@ -23,7 +24,8 @@ export default {
     [Captcha.name]: Captcha,
   },
 }
-</script>
+
+</script>
 
 <style lang="stylus">
 .md-example-child-captcha-1
